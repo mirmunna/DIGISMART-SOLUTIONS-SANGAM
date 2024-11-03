@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digismart Solutions - Industrial Training Institute</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f0f8ff;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: #fff;
+      padding: 3rem 1rem;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      font-family: 'Roboto', sans-serif;
+    }
+    .content h2 {
+      color: #ff416c;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .content p {
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .facilities {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-around;
+      padding-bottom: 1rem;
+    }
+    .facility {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      width: 22%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    .form-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #ff4b2b;
+      margin-bottom: 1rem;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      font-family: 'Roboto', sans-serif;
+    }
+    form label {
+      font-weight: bold;
+      color: #333;
+    }
+    form input, form select {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 100%;
+      box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    form button {
+      grid-column: span 2;
+      padding: 1rem;
+      background-color: #ff416c;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.2s;
+      font-family: 'Montserrat', sans-serif;
+    }
+    form button:hover {
+      background-color: #ff4b2b;
+      transform: scale(1.05);
+    }
+    #thankYouMessage {
+      display: none;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #ff416c;
+      margin-top: 1rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+    footer {
+      background: #ff4b2b;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>DIGISMART SOLUTIONS - INDUSTRIAL TRAINING INSTITUTE</h1>
+    <p>Admission Open - Enroll Yourself for a Better Future</p>
+  </header>
+
+  <!-- Main Content -->
+  <section class="content">
+    <h2>Why Choose Us?</h2>
+    <p>The program helps individuals access better-paying jobs and a higher standard of living. The Skill India certificate is widely recognized and increases employability. Our program encourages entrepreneurship and innovation, leading to job creation.</p>
+    <div class="facilities">
+      <div class="facility">SMART CLASS ROOM</div>
+      <div class="facility">WELL EQUIPPED WORKSHOP</div>
+      <div class="facility">LIBRARY</div>
+      <div class="facility">IT LAB</div>
+      <div class="facility">WI-FI CAMPUS</div>
+      <div class="facility">APPRENTICESHIP SCHEMES</div>
+      <div class="facility">PMKVY 4.0</div>
+      <div class="facility">PM VISHWAKARMA</div>
+      <div class="facility">HUNAR SE ROZGAR TAK</div>
+    </div>
+  </section>
+
+  <!-- Registration Form Section -->
+  <section class="form-section">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="fathername">Father's Name</label>
+      <input type="text" id="fathername" name="fathername" required>
+
+      <label for="mothername">Mother's Name</label>
+      <input type="text" id="mothername" name="mothername" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="prevclass">Previous Class</label>
+      <input type="text" id="prevclass" name="prevclass" required>
+
+      <label for="percentage">Percentage</label>
+      <input type="number" id="percentage" name="percentage" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="altphone">Alternate Number</label>
+      <input type="tel" id="altphone" name="altphone">
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="course">Choose Course</label>
+      <select id="course" name="course" required>
+        <option>Advanced Diploma In Computer Applications</option>
+        <option>Diploma in Computer Applications</option>
+        <option>Typing</option>
+        <option>Tally ERP 9 and Tally Prime With GST</option>
+        <option>Cutting and Tailoring & Hand Embroidery</option>
+        <option>Diploma in Beautician (Beauty Parlour)</option>
+        <option>Diploma in Hotel Management & Tourism</option>
+        <option>Certificate in Radiography</option>
+        <option>Certificate in Dialysis Technician</option>
+        <option>Emergency Medical Technician</option>
+        <option>Certificate in Medical Laboratory Technician</option>
+        <option>Certificate in Physiotherapy Technician</option>
+        <option>Diploma in General Duty Assistant</option>
+        <option>Diploma in Computer Applications Assistant</option>
+        <option>Graduate Diploma in Computer Applications</option>
+        <option>Diploma in Management Office & Financial Accounting</option>
+        <option>Diploma in Stenography and Shorthand</option>
+        <option>Certificate in Tally Prime with G.S.T.</option>
+        <option>English Speaking & Personality Development Classes</option>
+      </select>
+
+      <button type="submit">Apply Now</button>
+    </form>
+    <div id="thankYouMessage">
+      Thank you!<br>Your form has been successfully submitted to DIGISMART SOLUTIONS - INDUSTRIAL TRAINING INSTITUTE, SANGAM ANANTNAG. We’re excited to have you reach out and will be in touch soon.<br><br>Best regards,<br>DIGISMART SOLUTIONS Team
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Follow Us: 
+      <a href="https://instagram.com/digismartsolutions9987" target="_blank">Instagram</a> | 
+      <a href="https://facebook.com/digismartsolutions" target="_blank">Facebook</a>
+    </p>
+    <p>Location: NH-44 Sangam Opposite J&K Bank</p>
+    <p>100% Placement Support | Rank - 1 Private Institution in Kashmir</p>
+  </footer>
+
+  <script>
+    // Form Submission Logic
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent page reload
+      
+      // Gather all form data
+      const formData = {
+        fullname: document.getElementById("fullname").value,
+        fathername: document.getElementById("fathername").value,
+        mothername: document.getElementById("mothername").value,
+        email: document.getElementById("email").value,
+        prevclass: document.getElementById("prevclass").value,
+        percentage: document.getElementById("percentage").value,
+        phone: document.getElementById("phone").value,
+        altphone: document.getElementById("altphone").value,
+        dob: document.getElementById("dob").value,
+        gender: document.getElementById("gender").value,
+        course: document.getElementById("course").value
+      };
+
+      // Send all form data to the backend
+      fetch('https://submit-form.com/2YnsUlYj3', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      // Show thank you message
+      document.getElementById("thankYouMessage").style.display = "block";
+    });
+  </script>
+
+</body>
+</html>
